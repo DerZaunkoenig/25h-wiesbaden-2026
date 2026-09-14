@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>25h Wiesbaden 2026 – ASC Göttingen Weltwärts Allstars</title>
+<meta name="description" content="Abschlussergebnis der ASC Göttingen Weltwärts Allstars beim WISPO 25h Lauf Wiesbaden 2026: Platz 3 von 49, 409 Runden, 378,3 km – mit Einzelauswertung für alle 25 Läufer:innen.">
+<meta name="theme-color" content="#070B16">
+<meta property="og:title" content="25h Wiesbaden 2026 – ASC Göttingen Weltwärts Allstars">
+<meta property="og:description" content="Platz 3 von 49 · 409 Runden · 378,3 km · 25 Läufer:innen">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Nachtfarben wie auf dem Live-Board – das Rennen lief 25 Stunden am Stück,
+   die Hälfte davon im Dunkeln. Gold kommt neu dazu: es ging aufs Podium. */
+:root{
+  --bg:#070B16; --panel:#0F1628; --panel2:#17203A; --sunk:#0A1020;
+  --ink:#EDF2FF; --ink2:#9AACD2; --ink3:#6B7CA3;
+  --line:#1E2A47; --line2:#2B3A60;
+  --cy:#2CC9E4; --am:#F0A92B; --pk:#F2568E; --vi:#9079F2; --gr:#37CE85; --rd:#FF6B6B;
+  --gold:#F2C53D; --silver:#AFC0DC; --bronze:#CF8C4E;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:Barlow,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(1100px 560px at 12% -8%, rgba(242,197,61,.13), transparent 62%),
+    radial-gradient(900px 480px at 94% 2%, rgba(144,121,242,.13), transparent 60%),
+    radial-gradient(800px 500px at 50% 108%, rgba(44,201,228,.08), transparent 65%);
+  background-attachment:fixed;
+}
+h1,h2,h3{font-family:"Barlow Condensed",Barlow,sans-serif; margin:0; text-wrap:balance; font-weight:700;}
+h1{font-size:clamp(30px,7vw,60px); line-height:.98; text-transform:uppercase; letter-spacing:.004em;}
+h2{font-size:clamp(20px,3.4vw,28px); text-transform:uppercase; letter-spacing:.02em;}
+h3{font-size:clamp(17px,2.4vw,21px);}
+a{color:var(--cy)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums;}
+.num{font-variant-numeric:tabular-nums;}
+.eyebrow{font-size:11px; font-weight:600; letter-spacing:.17em; text-transform:uppercase; color:var(--ink3);}
+.wrap{max-width:1120px; margin:0 auto; padding:0 16px;}
+section{margin:clamp(34px,6vw,64px) 0;}
+.shead{display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  flex-wrap:wrap; margin-bottom:14px; border-bottom:1px solid var(--line); padding-bottom:9px;}
+.panel{background:var(--panel); border:1px solid var(--line); border-radius:var(--r);
+  box-shadow:0 1px 0 rgba(255,255,255,.03) inset, 0 18px 40px -28px #000;}
+
+/* ── Kopf ──────────────────────────────────────────────────────────────── */
+header{padding:clamp(26px,5vw,54px) 0 0;}
+.ident{display:flex; align-items:center; gap:14px; margin-bottom:18px;}
+.ident img{height:56px; width:56px; flex:none; object-fit:contain; background:#fff;
+  border-radius:50%; padding:5px; box-shadow:0 3px 14px rgba(0,0,0,.5);}
+.ident .who{min-width:0}
+.ident .club{font-size:12.5px; font-weight:600; letter-spacing:.05em; color:var(--ink2);}
+.ident .ev{font-size:13px; color:var(--ink3);}
+h1 em{font-style:normal; color:var(--gold);}
+
+.hero{display:grid; gap:14px; grid-template-columns:1fr; margin-top:22px;}
+@media(min-width:760px){ .hero{grid-template-columns:minmax(260px,.9fr) 1.6fr; align-items:stretch;} }
+.medal{position:relative; overflow:hidden; padding:22px 20px; display:flex; flex-direction:column;
+  justify-content:center; gap:2px; background:
+    linear-gradient(150deg, rgba(242,197,61,.20), rgba(242,197,61,.04) 55%, transparent),
+    var(--panel);
+  border-color:rgba(242,197,61,.34);}
+.medal .pl{font-family:"Barlow Condensed",sans-serif; font-size:clamp(66px,15vw,104px);
+  font-weight:700; line-height:.82; color:var(--gold); letter-spacing:-.02em;}
+.medal .of{font-size:14px; color:var(--ink2); margin-top:6px;}
+.medal .cat{margin-top:12px; font-size:12.5px; color:var(--ink2); border-top:1px dashed var(--line2); padding-top:10px;}
+.stats{display:grid; grid-template-columns:repeat(2,1fr); gap:10px;}
+@media(min-width:560px){ .stats{grid-template-columns:repeat(4,1fr);} }
+@media(min-width:760px){ .stats{grid-template-columns:repeat(2,1fr);} }
+@media(min-width:980px){ .stats{grid-template-columns:repeat(4,1fr);} }
+.stat{padding:14px 14px 13px; display:flex; flex-direction:column; gap:2px;}
+.stat b{font-family:"Barlow Condensed",sans-serif; font-weight:700; font-size:clamp(26px,4.6vw,34px);
+  line-height:1.02; font-variant-numeric:tabular-nums;}
+.stat small{font-size:12px; color:var(--ink3);}
+.stat.cy b{color:var(--cy)} .stat.am b{color:var(--am)}
+.stat.vi b{color:var(--vi)} .stat.gr b{color:var(--gr)}
+
+.gaps{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
+.chip{display:inline-flex; align-items:center; gap:7px; padding:6px 11px; border-radius:999px;
+  background:var(--sunk); border:1px solid var(--line); font-size:12.5px; color:var(--ink2);}
+.chip b{color:var(--ink); font-variant-numeric:tabular-nums;}
+
+/* ── Läufer:innen-Auswahl ──────────────────────────────────────────────── */
+.pickbar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:14px;}
+input[type=search]{flex:1 1 220px; min-width:0; font:inherit; font-size:15px; color:var(--ink);
+  background:var(--sunk); border:1px solid var(--line2); border-radius:10px; padding:10px 13px;}
+input[type=search]::placeholder{color:var(--ink3)}
+input[type=search]:focus{outline:2px solid var(--cy); outline-offset:1px}
+.grid{display:grid; gap:9px; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+.rcard{text-align:left; font:inherit; color:var(--ink); cursor:pointer; padding:11px 12px;
+  background:var(--panel); border:1px solid var(--line); border-radius:12px; display:flex;
+  flex-direction:column; gap:3px; transition:border-color .12s, transform .12s, background .12s;}
+.rcard:hover{border-color:var(--line2); background:var(--panel2); transform:translateY(-1px);}
+.rcard:focus-visible{outline:2px solid var(--cy); outline-offset:2px}
+.rcard[aria-pressed=true]{border-color:var(--cy); background:rgba(44,201,228,.12);}
+.rcard .nm{font-weight:600; font-size:14.5px; line-height:1.2;}
+.rcard .mt{font-size:11.5px; color:var(--ink3); font-variant-numeric:tabular-nums;}
+.rcard .bar{height:3px; border-radius:2px; background:var(--line); overflow:hidden; margin-top:5px;}
+.rcard .bar i{display:block; height:100%; background:var(--cy);}
+
+/* ── Persönliche Auswertung ────────────────────────────────────────────── */
+#detail{scroll-margin-top:16px;}
+#detail[hidden]{display:none}
+.dhead{display:flex; align-items:flex-start; justify-content:space-between; gap:14px;
+  flex-wrap:wrap; padding:18px 18px 16px; border-bottom:1px solid var(--line);}
+.dhead .nm{font-family:"Barlow Condensed",sans-serif; font-size:clamp(28px,6vw,42px);
+  font-weight:700; line-height:1; text-transform:uppercase;}
+.dhead .sub{font-size:13px; color:var(--ink2); margin-top:4px;}
+.btn{font:inherit; font-size:13px; color:var(--ink2); background:var(--sunk); cursor:pointer;
+  border:1px solid var(--line2); border-radius:9px; padding:7px 12px;}
+.btn:hover{color:var(--ink); border-color:var(--cy)}
+.dgrid{display:grid; gap:1px; background:var(--line); border-bottom:1px solid var(--line);
+  grid-template-columns:repeat(2,1fr);}
+@media(min-width:640px){ .dgrid{grid-template-columns:repeat(3,1fr);} }
+@media(min-width:900px){ .dgrid{grid-template-columns:repeat(6,1fr);} }
+.dstat{background:var(--panel); padding:13px 14px;}
+.dstat b{display:block; font-family:"Barlow Condensed",sans-serif; font-weight:700;
+  font-size:clamp(21px,3.6vw,27px); line-height:1.05; font-variant-numeric:tabular-nums;}
+.dstat small{display:block; font-size:11.5px; color:var(--ink3); margin-top:1px;}
+.dstat .hint{font-size:11px; color:var(--ink2); margin-top:3px;}
+.dbody{padding:16px 18px 18px; display:grid; gap:20px;}
+@media(min-width:900px){ .dbody{grid-template-columns:1.25fr .95fr; align-items:start;} }
+.block h3{margin-bottom:4px}
+.blocknote{font-size:12.5px; color:var(--ink3); margin-bottom:10px;}
+svg.chart{width:100%; height:auto; display:block; overflow:visible;}
+.legend{display:flex; gap:14px; flex-wrap:wrap; font-size:11.5px; color:var(--ink3); margin-top:8px;}
+.legend i{display:inline-block; width:16px; height:2px; vertical-align:middle; margin-right:5px;}
+.legend i.dot{width:9px; height:9px; border-radius:50%;}
+.phead2{display:flex; align-items:flex-start; justify-content:space-between; gap:12px;
+  flex-wrap:wrap; margin-bottom:10px;}
+.ctrl{display:flex; gap:6px; flex:none;}
+.btn.sm{padding:5px 10px; font-size:12px;}
+.btn[aria-pressed=true]{color:var(--ink); border-color:var(--cy); background:rgba(44,201,228,.13);}
+
+.laps{max-height:330px; overflow:auto; border:1px solid var(--line); border-radius:10px;
+  scrollbar-width:thin; scrollbar-color:var(--line2) transparent;}
+.laps::-webkit-scrollbar{width:8px} .laps::-webkit-scrollbar-thumb{background:var(--line2); border-radius:4px}
+table{width:100%; border-collapse:collapse; font-size:13.5px;}
+th{position:sticky; top:0; z-index:1; background:var(--panel2); text-align:left; font-size:11px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink3); font-weight:600;
+  padding:8px 10px; border-bottom:1px solid var(--line);}
+td{padding:7px 10px; border-bottom:1px solid rgba(30,42,71,.6); font-variant-numeric:tabular-nums;}
+tr:last-child td{border-bottom:none}
+td.r,th.r{text-align:right}
+.lapbar{display:block; position:relative; height:6px; border-radius:3px; background:var(--sunk); min-width:46px;}
+@media(max-width:540px){ .laps th:nth-child(5), .laps td:nth-child(5){display:none} }
+.lapbar i{position:absolute; inset:0 auto 0 0; border-radius:3px; background:var(--cy); opacity:.75;}
+tr.best td{background:rgba(55,206,133,.10)}
+tr.best .lapbar i{background:var(--gr); opacity:1}
+
+/* ── Tabellen (Wertung, Staffeln) ──────────────────────────────────────── */
+.tblwrap{overflow:auto; border-radius:var(--r); border:1px solid var(--line); background:var(--panel);}
+.tbl{font-size:14px; min-width:440px;}
+.tbl td{padding:9px 12px} .tbl th{padding:9px 12px}
+.tbl tr.us td{background:rgba(242,197,61,.13); font-weight:600;}
+.tbl tr.us td:first-child{box-shadow:inset 3px 0 0 var(--gold)}
+.pos{display:inline-flex; align-items:center; justify-content:center; min-width:26px; height:22px;
+  border-radius:6px; background:var(--sunk); font-size:12.5px; font-weight:600; padding:0 6px;}
+.pos.p1{background:rgba(242,197,61,.22); color:var(--gold)}
+.pos.p2{background:rgba(175,192,220,.18); color:var(--silver)}
+.pos.p3{background:rgba(207,140,78,.22); color:var(--bronze)}
+.more{display:block; width:100%; text-align:center; font:inherit; font-size:13px; cursor:pointer;
+  color:var(--ink2); background:var(--panel2); border:none; border-top:1px solid var(--line); padding:11px;}
+.more:hover{color:var(--ink)}
+
+.two{display:grid; gap:14px; grid-template-columns:1fr;}
+@media(min-width:860px){ .two{grid-template-columns:1.15fr .85fr;} }
+.cardpad{padding:15px 16px 16px;}
+.sfl{display:grid; gap:9px;}
+.sflrow{display:grid; grid-template-columns:auto 1fr auto; gap:10px; align-items:center;
+  padding:9px 11px; background:var(--sunk); border:1px solid var(--line); border-radius:10px;}
+.sflrow .nm{font-weight:600; font-size:13.5px}
+.sflrow .mem{font-size:11.5px; color:var(--ink3); line-height:1.35}
+.sflrow .n{font-family:"Barlow Condensed",sans-serif; font-size:23px; font-weight:700; color:var(--cy);
+  font-variant-numeric:tabular-nums; text-align:right;}
+.sflrow .n small{display:block; font-size:10.5px; color:var(--ink3); font-family:Barlow,sans-serif; font-weight:500;}
+/* Auf dem Handy nebeneinander zu eng: Name oben, die beiden Zahlen darunter. */
+@media(max-width:640px){
+  .sflrow{grid-template-columns:1fr 1fr; gap:6px 12px;}
+  .sflrow>div:nth-child(2){grid-column:1/-1; order:-1}
+  .sflrow .n{text-align:left}
+  .sflrow .n small{display:inline; margin-left:5px}
+}
+
+footer{border-top:1px solid var(--line); margin-top:44px; padding:20px 0 40px; font-size:12.5px; color:var(--ink3);}
+footer a{color:var(--ink2)}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="ident">
+      <img id="logo" alt="" hidden>
+      <div class="who">
+        <div class="club">ASC Göttingen von 1846 e.V.</div>
+        <div class="ev">WISPO 25h Lauf Wiesbaden · 12.–13. September 2026 · Wertung „Fun“</div>
+      </div>
+    </div>
+    <h1>Weltwärts <em>Allstars</em><br>25 Stunden, 409 Runden</h1>
+
+    <div class="hero">
+      <div class="panel medal">
+        <div class="eyebrow">Endstand</div>
+        <div class="pl">3.</div>
+        <div class="of">Platz von <b class="num">49</b> Teams</div>
+        <div class="cat">Sieger: <b>Die Waldsträßer</b> mit 433 Runden</div>
+      </div>
+      <div>
+        <div class="stats">
+          <div class="panel stat cy"><b id="s-laps">409</b><small>Runden à 925 m</small></div>
+          <div class="panel stat am"><b id="s-km">378,3</b><small>Kilometer gesamt</small></div>
+          <div class="panel stat vi"><b id="s-run">25</b><small>Läufer:innen</small></div>
+          <div class="panel stat gr"><b id="s-avg">3:40</b><small>Ø Rundenzeit</small></div>
+        </div>
+        <div class="gaps" id="gaps"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ── Persönliche Auswertung ─────────────────────────────────────────── -->
+  <section id="ich">
+    <div class="shead">
+      <h2>Finde dich selbst</h2>
+      <span class="eyebrow">25 Läufer:innen · tippe auf deinen Namen</span>
+    </div>
+
+    <div class="pickbar">
+      <input type="search" id="q" placeholder="Name suchen …" autocomplete="off" aria-label="Läufer:in suchen">
+      <button class="btn" id="clear" hidden>Auswahl aufheben</button>
+    </div>
+    <div class="grid" id="picker"></div>
+
+    <div class="panel" id="detail" hidden style="margin-top:16px">
+      <div class="dhead">
+        <div>
+          <div class="nm" id="d-name">–</div>
+          <div class="sub" id="d-sub">–</div>
+        </div>
+        <button class="btn" id="d-close">Schließen</button>
+      </div>
+      <div class="dgrid" id="d-stats"></div>
+      <div class="dbody">
+        <div class="block">
+          <h3>Alle Runden</h3>
+          <div class="blocknote" id="d-lapnote">Jede Runde einzeln – die schnellste ist grün.</div>
+          <div class="laps">
+            <table>
+              <thead><tr><th class="r">#</th><th>Startzeit</th><th class="r">Zeit</th><th class="r">Pace</th><th style="width:34%">Verlauf</th></tr></thead>
+              <tbody id="d-laps"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Rundenzeiten im Verlauf</h3>
+          <div class="blocknote">Punkt = eine Runde, von der ersten bis zur letzten.</div>
+          <svg class="chart" id="d-chart" viewBox="0 0 400 170" role="img" aria-label="Rundenzeiten im Verlauf"></svg>
+          <div class="legend">
+            <span><i style="background:var(--cy)"></i>deine Runden</span>
+            <span><i style="background:var(--am)"></i>dein Schnitt</span>
+            <span><i style="background:var(--ink3)"></i>Team-Schnitt</span>
+          </div>
+
+          <h3 style="margin-top:20px">Wann du unterwegs warst</h3>
+          <div class="blocknote">Die 25 Rennstunden von Samstag 10 Uhr bis Sonntag 11 Uhr.</div>
+          <svg class="chart" id="d-time" viewBox="0 0 400 58" role="img" aria-label="Einsatzzeiten über das Rennen"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Team ───────────────────────────────────────────────────────────── -->
+  <section id="team">
+    <div class="shead">
+      <h2>Das Rennen des Teams</h2>
+      <span class="eyebrow">25 Stunden am Stück</span>
+    </div>
+    <div class="two">
+      <div class="panel cardpad">
+        <h3>Platzierung über die Distanz</h3>
+        <div class="blocknote">Rundenabstand zur Spitze (Fläche) und Platzierung (Linie).</div>
+        <svg class="chart" id="t-hist" viewBox="0 0 560 200" role="img" aria-label="Rennverlauf: Platzierung und Rückstand"></svg>
+        <div class="legend">
+          <span><i style="background:var(--cy)"></i>Platzierung</span>
+          <span><i style="background:var(--vi)"></i>Rückstand auf Platz 1</span>
+        </div>
+      </div>
+      <div class="panel cardpad">
+        <h3>Runden pro Stunde</h3>
+        <div class="blocknote">Die Nacht von 22 bis 7 Uhr ist dunkel hinterlegt.</div>
+        <svg class="chart" id="t-hours" viewBox="0 0 400 170" role="img" aria-label="Runden pro Rennstunde"></svg>
+      </div>
+    </div>
+
+    <div class="panel cardpad" style="margin-top:14px">
+      <div class="phead2">
+        <div>
+          <h3>Rundenzeiten des Teams</h3>
+          <div class="blocknote" style="margin-bottom:0">Jeder Punkt ist eine Runde, eingefärbt nach Staffel – die Streifen sind die Stundenwechsel.</div>
+        </div>
+        <span class="ctrl">
+          <button class="btn sm" id="bAll" aria-pressed="true">Alle 409</button>
+          <button class="btn sm" id="bLast" aria-pressed="false">Letzte 60</button>
+        </span>
+      </div>
+      <svg class="chart" id="t-laps" viewBox="0 0 700 250" role="img" aria-label="Rundenzeiten aller 409 Runden nach Staffel"></svg>
+      <div class="legend" id="lapleg"></div>
+    </div>
+
+    <div class="panel cardpad" style="margin-top:14px">
+      <h3>Die Staffeln</h3>
+      <div class="blocknote">Sechs Staffeln im Stundenwechsel, vier Durchgänge – die letzte Stunde lief, wer noch konnte.</div>
+      <div class="sfl" id="t-sfl"></div>
+    </div>
+  </section>
+
+  <!-- ── Gesamtwertung ──────────────────────────────────────────────────── -->
+  <section id="wertung">
+    <div class="shead">
+      <h2>Gesamtwertung „Fun“</h2>
+      <span class="eyebrow">49 Teams</span>
+    </div>
+    <div class="tblwrap">
+      <table class="tbl">
+        <thead><tr><th class="r">Pl.</th><th>Team</th><th class="r">Runden</th><th class="r">km</th><th class="r">Rückstand</th></tr></thead>
+        <tbody id="w-body"></tbody>
+      </table>
+      <button class="more" id="w-more">Alle 49 Teams anzeigen</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Daten: offizielle Zeitnahme MA:XX Sports Timing ·
+    <a href="https://live-results.com/2026/9/wispo%2025h%20lauf%202026/race/2429" rel="noopener">Gesamtwertung</a> ·
+    <a href="https://live-results.com/2026/9/wispo%2025h%20lauf%202026/athlete/801956" rel="noopener">Team 801956</a><br>
+    Runde = 925 m · Rennzeit 12.09.2026 10:00 – 13.09.2026 11:00 · Stand: Zieleinlauf
+  </div>
+</footer>
+
+<script id="data" type="application/json">{"event":"WISPO 25h Lauf Wiesbaden 2026","team":"ASC GÖTTINGEN WELTWÄRTS ALLSTARS","club":"ASC Göttingen von 1846 e.V.","bib":801956,"start":1789200034622,"raceMs":90000000,"lapM":925,"result":{"rank":3,"field":49,"laps":409,"km":378.32,"leader":"DIE WALDSTRÄßER","leaderLaps":433,"gapLeader":24,"ahead":"LIONS - SIE LAUFEN WIE DIE LÖWEN","gapAhead":17,"behind":"RUNUNITYCLUB","gapBehind":4,"runners":25,"avgLap":219756,"bestLap":164010,"bestLapBy":"Lennard Poppe","moving":89880290},"standings":[{"rank":1,"nr":138988,"name":"DIE WALDSTRÄßER","laps":433,"km":400.52,"us":false},{"rank":2,"nr":841831,"name":"LIONS - SIE LAUFEN WIE DIE LÖWEN","laps":426,"km":394.05,"us":false},{"rank":3,"nr":801956,"name":"ASC GÖTTINGEN WELTWÄRTS ALLSTARS","laps":409,"km":378.32,"us":true},{"rank":4,"nr":880429,"name":"RUNUNITYCLUB","laps":405,"km":374.62,"us":false},{"rank":5,"nr":601833,"name":"DIRECT- BAUMANAGEMENT & FRIENDS","laps":395,"km":365.38,"us":false},{"rank":6,"nr":211546,"name":"WICHTEL EXPRESS","laps":387,"km":357.98,"us":false},{"rank":7,"nr":866589,"name":"AMADEUS GROUP","laps":385,"km":356.12,"us":false},{"rank":8,"nr":501287,"name":"RECHT SPORTLICH","laps":384,"km":355.2,"us":false},{"rank":9,"nr":857735,"name":"RUN MIT FUN","laps":382,"km":353.35,"us":false},{"rank":10,"nr":633468,"name":"ST. BIRGID","laps":372,"km":344.1,"us":false},{"rank":11,"nr":893980,"name":"BKA-RUNNERS","laps":369,"km":341.32,"us":false},{"rank":12,"nr":149338,"name":"A LEASE X GROSS MESSEBAU X PAUL & PARTNER REAL ESTATE","laps":367,"km":339.48,"us":false},{"rank":13,"nr":379309,"name":"TEAM KNEIP","laps":365,"km":337.62,"us":false},{"rank":14,"nr":785206,"name":"CIRQUE DU SORE LEGS","laps":364,"km":336.7,"us":false},{"rank":15,"nr":342275,"name":"DIE TESTLÄUFER (TV IGSTADT)","laps":351,"km":324.68,"us":false},{"rank":16,"nr":458324,"name":"PITKOWSKI PACE CREW","laps":348,"km":321.9,"us":false},{"rank":17,"nr":635462,"name":"STIFTUNG WADENTEST FUN","laps":343,"km":317.27,"us":false},{"rank":18,"nr":560829,"name":"APLEONA","laps":342,"km":316.35,"us":false},{"rank":19,"nr":203048,"name":"HMLU ROADRUNNERS","laps":341,"km":315.43,"us":false},{"rank":20,"nr":982503,"name":"ESWE ENERGY RUNNERS","laps":341,"km":315.43,"us":false},{"rank":21,"nr":931441,"name":"WVB RUNNERS","laps":335,"km":309.88,"us":false},{"rank":22,"nr":547495,"name":"DIE EDELWEIßCHEN","laps":335,"km":309.88,"us":false},{"rank":23,"nr":177517,"name":"P+P TEAM","laps":332,"km":307.1,"us":false},{"rank":24,"nr":486626,"name":"GWW - WE RUN FOR FUN","laps":328,"km":303.4,"us":false},{"rank":25,"nr":683894,"name":"KORIA RUNNERS - WENNS KRACHT RENNEN WIR","laps":328,"km":303.4,"us":false},{"rank":26,"nr":897696,"name":"INFRASERV EXPRESS","laps":327,"km":302.48,"us":false},{"rank":27,"nr":334181,"name":"FITNESS FIRST RUNNERS","laps":326,"km":301.55,"us":false},{"rank":28,"nr":328682,"name":"HELDEN E.V.","laps":321,"km":296.93,"us":false},{"rank":29,"nr":757405,"name":"ABBVIE HEALTH RUNNERS","laps":319,"km":295.07,"us":false},{"rank":30,"nr":839939,"name":"BAUMSTARKE JUNGE UNION","laps":316,"km":292.3,"us":false},{"rank":31,"nr":789329,"name":"FEUERWEHR WIESBADEN","laps":314,"km":290.45,"us":false},{"rank":32,"nr":843161,"name":"LUFT NACH OBEN","laps":313,"km":289.52,"us":false},{"rank":33,"nr":611039,"name":"CROSSFIT CENTRAL WIESBADEN","laps":312,"km":288.6,"us":false},{"rank":34,"nr":302332,"name":"FIVE-O","laps":312,"km":288.6,"us":false},{"rank":35,"nr":565612,"name":"JOGGING HEROES","laps":311,"km":287.68,"us":false},{"rank":36,"nr":476001,"name":"RUNNINGS","laps":308,"km":284.9,"us":false},{"rank":37,"nr":597982,"name":"DAELIS PIZZERIA WERUNWIESBADEN","laps":307,"km":283.98,"us":false},{"rank":38,"nr":618961,"name":"NASPA","laps":303,"km":280.27,"us":false},{"rank":39,"nr":948324,"name":"ESWE VERKEHR DIE MOBILMACHER","laps":300,"km":277.5,"us":false},{"rank":40,"nr":681320,"name":"GREEN LIGHTNINGS","laps":299,"km":276.57,"us":false},{"rank":41,"nr":405137,"name":"DIE NACHSITZER","laps":296,"km":273.8,"us":false},{"rank":42,"nr":878454,"name":"ROTARY ALLSTARS","laps":294,"km":271.95,"us":false},{"rank":43,"nr":386012,"name":"FLOTTE SOCKEN","laps":292,"km":270.1,"us":false},{"rank":44,"nr":165598,"name":"WIESBADEN INKLUSIV","laps":291,"km":269.18,"us":false},{"rank":45,"nr":579680,"name":"DIE GRÜNEN FLITZER","laps":289,"km":267.32,"us":false},{"rank":46,"nr":182122,"name":"FDP WIESBADEN","laps":284,"km":262.7,"us":false},{"rank":47,"nr":154565,"name":"TWC/WICM  RUN FOR FUN","laps":282,"km":260.85,"us":false},{"rank":48,"nr":677685,"name":"HESSISCHER LANDTAG","laps":277,"km":256.23,"us":false},{"rank":49,"nr":376098,"name":"BECHTLE TECHRUNNERS","laps":131,"km":121.17,"us":false}],"runners":[{"name":"De Dieu","key":"de-dieu","hours":[0,6,12,18,19,24],"n":21,"km":19.43,"total":4064830,"best":168690,"worst":210560,"avg":193563,"first":0,"last":89080850,"night":10,"staffel":"Staffel 1","color":"#40C46E","rankLaps":1,"rankBest":3,"lapList":[[1,168690,0],[5,190800,695520],[9,190790,1438370],[13,199310,2196960],[17,195430,2964020],[103,181970,21689170],[107,182850,22433580],[111,200790,23189010],[115,204260,23959850],[119,196350,24724200],[203,186950,43426090],[207,191180,44180900],[211,194910,44945240],[215,193310,45724970],[219,195910,46497950],[300,195420,65230600],[304,193050,66038270],[308,203030,66837340],[312,208070,67656710],[316,210560,68472070],[405,181200,88899650]]},{"name":"Lennard Poppe","key":"lennard-poppe","hours":[0,6,12,18,24],"n":20,"km":18.5,"total":3600230,"best":164010,"worst":193570,"avg":180012,"first":168690,"last":89880290,"night":9,"staffel":"Staffel 1","color":"#40C46E","rankLaps":2,"rankBest":1,"lapList":[[2,164010,168690],[6,175770,886320],[10,180590,1629160],[14,178770,2396270],[18,177140,3159450],[104,179070,21871140],[108,176730,22616430],[112,179170,23389800],[116,175200,24164110],[120,180210,24920550],[204,179620,43613040],[208,177270,44372080],[212,179780,45140150],[216,181620,45918280],[220,184620,46693860],[301,193570,65426020],[305,187910,66231320],[309,189330,67040370],[313,186620,67864780],[409,173230,89707060]]},{"name":"Benedikt Abel","key":"benedikt-abel","hours":[0,5,6,12,18,23],"n":20,"km":18.5,"total":3651910,"best":168020,"worst":192880,"avg":182596,"first":527500,"last":85776390,"night":10,"staffel":"Staffel 1","color":"#40C46E","rankLaps":3,"rankBest":2,"lapList":[[4,168020,527500],[8,175490,1262880],[12,183010,2013950],[16,183320,2780700],[102,179190,21509980],[106,177160,22256420],[110,183150,23005860],[114,182200,23777650],[118,180410,24543790],[202,181890,43244200],[206,176630,44004270],[210,184270,44760970],[214,186190,45538780],[218,184120,46313830],[299,186130,65044470],[303,190030,65848240],[307,191220,66646120],[311,192880,67463830],[315,190780,68281290],[390,175820,85600570]]},{"name":"Joe Poppe","key":"joe-poppe","hours":[0,6,12,18,24],"n":20,"km":18.5,"total":4258760,"best":194800,"worst":234130,"avg":212938,"first":332700,"last":89287040,"night":9,"staffel":"Staffel 1","color":"#40C46E","rankLaps":4,"rankBest":8,"lapList":[[3,194800,332700],[7,200790,1062090],[11,204200,1809750],[15,205660,2575040],[19,208290,3336590],[105,206210,22050210],[109,212700,22793160],[113,208680,23568970],[117,204480,24339310],[121,212200,25100760],[205,211610,43792660],[209,211620,44549350],[213,218850,45319930],[217,213930,46099900],[298,218990,64825480],[302,228650,65619590],[306,226890,66419230],[310,234130,67229700],[314,229890,68051400],[406,206190,89080850]]},{"name":"Hannah Wachter","key":"hannah-wachter","hours":[4,10,16,17,20,22,24],"n":20,"km":18.5,"total":4356840,"best":195510,"worst":229400,"avg":217842,"first":14541870,"last":89707060,"night":7,"staffel":"Staffel 5","color":"#B083F5","rankLaps":5,"rankBest":10,"lapList":[[69,195510,14541870],[73,209030,15372800],[77,211220,16225750],[81,213610,17090500],[169,207390,36013170],[173,213280,36886050],[177,216090,37761360],[181,219510,38646550],[185,217750,39538090],[270,220060,58540590],[274,218530,59443800],[278,223430,60351870],[282,224360,61263690],[333,225330,72188450],[337,228540,73214200],[341,229400,74245200],[363,219540,79669260],[367,222560,80580080],[371,222050,81482630],[408,219650,89487410]]},{"name":"Fly Krüger","key":"fly-kruger","hours":[0,1,7,13,19,23],"n":19,"km":17.57,"total":3558280,"best":176620,"worst":196050,"avg":187278,"first":3544880,"last":86157590,"night":8,"staffel":"Staffel 2","color":"#4B8FE0","rankLaps":6,"rankBest":5,"lapList":[[20,179590,3544880],[24,176620,4352540],[28,183650,5174930],[32,185380,6007770],[36,186690,6848420],[124,183040,25689660],[128,183040,26539350],[132,186220,27390860],[135,185100,28016070],[138,187550,28641500],[224,196050,47560720],[228,187180,48419050],[232,192210,49277070],[236,191740,50126730],[320,193890,69389510],[324,190860,70263120],[328,193850,71133600],[332,192430,71996020],[392,183190,85974400]]},{"name":"Freddy Claasen","key":"freddy-claasen","hours":[5,11,17,23,24],"n":19,"km":17.57,"total":3803240,"best":185980,"worst":213050,"avg":200171,"first":18144590,"last":87503310,"night":5,"staffel":"Staffel 6","color":"#7FD8D0","rankLaps":7,"rankBest":7,"lapList":[[86,185980,18144590],[90,191050,18933180],[94,206220,19794860],[97,198430,20435820],[101,202260,21307720],[187,199790,39939650],[191,199420,40801520],[195,195420,41672880],[199,199500,42554220],[285,213050,61962940],[288,207480,62631090],[291,207450,63301070],[294,206190,63965470],[297,197720,64627760],[377,197340,82821980],[381,194580,83664780],[385,202120,84517710],[389,200420,85400150],[398,198820,87304490]]},{"name":"Stefan Schüür","key":"stefan-schuur","hours":[4,5,11,17,22,23,24],"n":19,"km":17.57,"total":3853890,"best":178690,"worst":239260,"avg":202836,"first":17965900,"last":87304490,"night":5,"staffel":"Staffel 6","color":"#7FD8D0","rankLaps":8,"rankBest":6,"lapList":[[85,178690,17965900],[89,191010,18742170],[93,202330,19592530],[96,212500,20223320],[100,199600,21108120],[186,183810,39755840],[190,200790,40600730],[194,204090,41468790],[198,204850,42349370],[284,239260,61723680],[287,217190,62413900],[290,220490,63080580],[293,209200,63756270],[296,202800,64424960],[376,201950,82620030],[380,193320,83471460],[384,198300,84319410],[388,200980,85199170],[397,192730,87111760]]},{"name":"Florian Lauffs","key":"florian-lauffs","hours":[1,7,13,19,24],"n":18,"km":16.65,"total":3481790,"best":172030,"worst":206930,"avg":193433,"first":3960440,"last":88672400,"night":8,"staffel":"Staffel 2","color":"#4B8FE0","rankLaps":9,"rankBest":4,"lapList":[[22,184660,3960440],[26,190550,4768800],[30,194530,5597770],[34,192510,6433280],[122,172030,25312960],[126,206930,26111540],[130,199080,26960350],[134,197110,27818960],[137,201170,28440330],[222,192770,47126240],[226,192430,47997970],[230,194290,48855300],[234,189210,49712960],[318,205930,68941520],[322,195230,69834890],[326,194980,70708270],[330,192920,71579140],[403,185460,88486940]]},{"name":"Leah Schultz","key":"leah-schultz","hours":[3,4,10,16,22,23],"n":18,"km":16.65,"total":3715730,"best":196100,"worst":217030,"avg":206429,"first":14345770,"last":85974400,"night":4,"staffel":"Staffel 5","color":"#B083F5","rankLaps":10,"rankBest":11,"lapList":[[68,196100,14345770],[72,203040,15169760],[76,208530,16017220],[80,206830,16883670],[84,208560,17757340],[171,198900,36439210],[175,201940,37317710],[179,205430,38202210],[183,207400,39091900],[269,217030,58323560],[273,209800,59234000],[277,211030,60140840],[281,211680,61052010],[362,210000,79459260],[366,208920,80371160],[370,207030,81275600],[374,205500,82178350],[391,198010,85776390]]},{"name":"Liesa Bunge","key":"liesa-bunge","hours":[4,10,16,17,22,24],"n":18,"km":16.65,"total":4117190,"best":217350,"worst":241810,"avg":228733,"first":14737380,"last":88899650,"night":5,"staffel":"Staffel 5","color":"#B083F5","rankLaps":11,"rankBest":17,"lapList":[[70,219680,14737380],[74,217350,15581830],[78,221860,16436970],[82,225320,17304110],[170,218650,36220560],[174,218380,37099330],[178,224760,37977450],[182,225840,38866060],[267,232160,57844430],[271,231170,58760650],[275,236590,59662330],[279,235760,60575300],[283,235630,61488050],[364,241810,79888800],[368,233730,80802640],[372,235070,81704680],[375,236180,82383850],[404,227250,88672400]]},{"name":"Swantje Brandt","key":"swantje-brandt","hours":[1,7,13,19,23],"n":18,"km":16.65,"total":4388930,"best":235970,"worst":258890,"avg":243829,"first":3724470,"last":86393800,"night":8,"staffel":"Staffel 2","color":"#4B8FE0","rankLaps":12,"rankBest":22,"lapList":[[21,235970,3724470],[25,239640,4529160],[29,239190,5358580],[33,240130,6193150],[37,241880,7035110],[125,238840,25872700],[129,237960,26722390],[133,241880,27577080],[136,239160,28201170],[221,247760,46878480],[225,241200,47756770],[229,249070,48606230],[233,243680,49469280],[317,258890,68682630],[321,251490,69583400],[325,254290,70453980],[329,251690,71327450],[393,236210,86157590]]},{"name":"Keno Schwedler","key":"keno-schwedler","hours":[2,3,8,9,15,20,21,24],"n":17,"km":15.72,"total":3531620,"best":195310,"worst":219560,"avg":207742,"first":10797270,"last":89487410,"night":5,"staffel":"Staffel 4","color":"#E5544A","rankLaps":13,"rankBest":9,"lapList":[[52,195310,10797270],[56,202480,11654720],[60,203730,12537020],[64,211480,13437970],[153,197600,32373670],[157,205390,33260800],[161,209670,34148330],[165,204290,35088130],[251,219560,54007030],[255,211560,54965830],[259,211180,55920230],[263,213440,56892470],[346,205500,75554190],[350,211940,76542140],[354,215750,77524870],[358,212370,78527270],[407,200370,89287040]]},{"name":"Leo Kunze","key":"leo-kunze","hours":[3,9,15,21,24],"n":17,"km":15.72,"total":3859970,"best":198500,"worst":274830,"avg":227057,"first":11220340,"last":87966530,"night":4,"staffel":"Staffel 4","color":"#E5544A","rankLaps":14,"rankBest":13,"lapList":[[54,201870,11220340],[58,207740,12089780],[62,214890,12979700],[66,209030,13892320],[155,209250,32807340],[159,198500,33703100],[163,233550,34604180],[167,231500,35534660],[253,227690,54481870],[257,228890,55429680],[261,253100,56385160],[265,232510,57357790],[347,251920,75759690],[351,249920,76754080],[355,274830,77740620],[359,225520,78739640],[400,209260,87757270]]},{"name":"Amelie Noll","key":"amelie-noll","hours":[3,9,15,20,21,24],"n":17,"km":15.72,"total":4213230,"best":227760,"worst":263710,"avg":247837,"first":10992580,"last":88217380,"night":5,"staffel":"Staffel 4","color":"#E5544A","rankLaps":15,"rankBest":18,"lapList":[[53,227760,10992580],[57,232580,11857200],[61,238950,12740750],[65,242870,13649450],[154,236070,32571270],[158,236910,33466190],[162,246180,34358000],[166,242240,35292420],[252,255280,54226590],[256,252290,55177390],[260,253750,56131410],[264,251880,57105910],[345,259380,75294810],[349,261770,76280370],[353,263710,77261160],[357,260760,78266510],[401,250850,87966530]]},{"name":"Amelie Mittnacht","key":"amelie-mittnacht","hours":[1,7,13,19,23],"n":16,"km":14.8,"total":3589400,"best":204670,"worst":242060,"avg":224338,"first":4145100,"last":86613330,"night":8,"staffel":"Staffel 2","color":"#4B8FE0","rankLaps":16,"rankBest":14,"lapList":[[23,207440,4145100],[27,215580,4959350],[31,215470,5792300],[35,222630,6625790],[123,204670,25484990],[127,220880,26318470],[131,231430,27159430],[223,241710,47319010],[227,228650,48190400],[231,227480,49049590],[235,224560,49902170],[319,242060,69147450],[323,233000,70030120],[327,230350,70903250],[331,223960,71772060],[394,219530,86393800]]},{"name":"Carina Walpert","key":"carina-walpert","hours":[4,10,16,22],"n":16,"km":14.8,"total":3787740,"best":212700,"worst":247940,"avg":236734,"first":14957060,"last":82178350,"night":4,"staffel":"Staffel 5","color":"#B083F5","rankLaps":17,"rankBest":15,"lapList":[[71,212700,14957060],[75,218040,15799180],[79,224840,16658830],[83,227910,17529430],[172,247940,36638110],[176,241710,37519650],[180,238910,38407640],[184,238790,39299300],[268,246970,58076590],[272,242180,58991820],[276,241920,59898920],[280,240950,60811060],[361,246500,79212760],[365,240550,80130610],[369,239230,81036370],[373,238600,81939750]]},{"name":"Ingo Dansberg","key":"ingo-dansberg","hours":[3,9,15,21],"n":16,"km":14.8,"total":3999010,"best":232510,"worst":268760,"avg":249938,"first":11422210,"last":79212760,"night":4,"staffel":"Staffel 4","color":"#E5544A","rankLaps":18,"rankBest":20,"lapList":[[55,232510,11422210],[59,239500,12297520],[63,243380,13194590],[67,244420,14101350],[156,244210,33016590],[160,246730,33901600],[164,250400,34837730],[168,247010,35766160],[254,256270,54709560],[258,261660,55658570],[262,254210,56638260],[266,254130,57590300],[348,268760,76011610],[352,257160,77004000],[356,251060,78015450],[360,247600,78965160]]},{"name":"Sello Leeuw","key":"sello-leeuw","hours":[5,11,17,23,24],"n":15,"km":13.88,"total":3628240,"best":213300,"worst":258730,"avg":241883,"first":18330570,"last":87111760,"night":4,"staffel":"Staffel 6","color":"#7FD8D0","rankLaps":19,"rankBest":16,"lapList":[[87,213300,18330570],[91,258730,19124230],[98,258110,20634250],[188,222380,40139440],[192,239750,41000940],[196,245300,41868300],[200,257940,42753720],[286,237910,62175990],[289,242010,62838570],[292,247750,63508520],[295,253300,64171660],[378,223560,83019320],[382,230860,83859360],[386,246450,84719830],[396,250890,86860870]]},{"name":"Charlotte Schulz","key":"charlotte-schulz","hours":[2,8,14,20,24],"n":15,"km":13.88,"total":3899730,"best":240030,"worst":278860,"avg":259982,"first":7515180,"last":88486940,"night":7,"staffel":"Staffel 3","color":"#E8B22E","rankLaps":20,"rankBest":24,"lapList":[[39,266450,7515180],[43,252810,8513380],[47,253950,9526840],[51,247790,10549480],[141,240030,29332640],[145,252470,30327550],[149,252220,31351370],[238,254460,50579970],[242,262250,51620870],[246,267620,52681230],[250,261370,53745660],[335,266810,72688090],[339,273080,73711720],[343,278860,74747990],[402,269560,88217380]]},{"name":"Weike Ve Rigoll","key":"weike-ve-rigoll","hours":[2,8,14,20,24],"n":14,"km":12.95,"total":3659290,"best":247130,"worst":274310,"avg":261378,"first":7781630,"last":87757270,"night":6,"staffel":"Staffel 3","color":"#E8B22E","rankLaps":21,"rankBest":25,"lapList":[[40,247180,7781630],[44,258270,8766190],[48,259330,9780790],[140,247130,29085510],[144,255180,30072370],[148,254030,31097340],[152,261470,32112200],[239,265850,50834430],[243,266890,51883120],[247,273320,52948850],[334,274310,72413780],[338,268980,73442740],[342,273390,74474600],[399,253960,87503310]]},{"name":"Anabel Rufer","key":"anabel-rufer","hours":[2,8,14,20,24],"n":13,"km":12.03,"total":3303140,"best":233740,"worst":267960,"avg":254088,"first":8028810,"last":86860870,"night":6,"staffel":"Staffel 3","color":"#E8B22E","rankLaps":22,"rankBest":21,"lapList":[[41,233740,8028810],[45,243500,9024460],[49,250180,10040120],[142,243090,29572670],[146,255770,30580020],[150,256310,31603590],[240,260500,51100280],[244,264050,52150010],[248,260800,53222170],[336,259300,72954900],[340,260400,73984800],[344,267960,75026850],[395,247540,86613330]]},{"name":"Lynn Leonhäuser","key":"lynn-leonhauser","hours":[2,8,13,14],"n":12,"km":11.1,"total":3085450,"best":238190,"worst":267170,"avg":257121,"first":7276990,"last":53745660,"night":4,"staffel":"Staffel 3","color":"#E8B22E","rankLaps":23,"rankBest":23,"lapList":[[38,238190,7276990],[42,250830,8262550],[46,258880,9267960],[50,259180,10290300],[139,256460,28829050],[143,256610,29815760],[147,261550,30835790],[151,252300,31859900],[237,261500,50318470],[241,260090,51360780],[245,267170,52414060],[249,262690,53482970]]},{"name":"Mara-Lena Fuchs","key":"mara-lena-fuchs","hours":[11,23],"n":7,"km":6.47,"total":1625980,"best":228100,"worst":238910,"avg":232283,"first":40361820,"last":85199170,"night":0,"staffel":"Staffel 6","color":"#7FD8D0","rankLaps":24,"rankBest":19,"lapList":[[189,238910,40361820],[193,228100,41240690],[197,235770,42113600],[201,232540,43011660],[379,228580,83242880],[383,229190,84090220],[387,232890,84966280]]},{"name":"Henning","key":"henning","hours":[5],"n":4,"km":3.7,"total":845870,"best":198300,"worst":222240,"avg":211468,"first":18543870,"last":21108120,"night":0,"staffel":"Staffel 6","color":"#7FD8D0","rankLaps":25,"rankBest":12,"lapList":[[88,198300,18543870],[92,209570,19382960],[95,222240,20001080],[99,215760,20892360]]}],"staffeln":[{"name":"Staffel 1","n":76,"total":14629130,"members":[["De Dieu",19],["Lennard Poppe",19],["Joe Poppe",19],["Benedikt Abel",18],["Fly Krüger",1]],"km":70.3,"avg":192489,"color":"#40C46E"},{"name":"Staffel 2","n":68,"total":14486480,"members":[["Swantje Brandt",17],["Florian Lauffs",17],["Fly Krüger",17],["Amelie Mittnacht",15],["Lynn Leonhäuser",1],["De Dieu",1]],"km":62.9,"avg":213036,"color":"#4B8FE0"},{"name":"Staffel 3","n":57,"total":14456110,"members":[["Charlotte Schulz",14],["Weike Ve Rigoll",13],["Anabel Rufer",12],["Lynn Leonhäuser",11],["Keno Schwedler",3],["Hannah Wachter",3],["Amelie Noll",1]],"km":52.73,"avg":253616,"color":"#E8B22E"},{"name":"Staffel 4","n":61,"total":14281660,"members":[["Leo Kunze",16],["Ingo Dansberg",16],["Amelie Noll",15],["Keno Schwedler",13],["Leah Schultz",1]],"km":56.42,"avg":234126,"color":"#E5544A"},{"name":"Staffel 5","n":65,"total":14373870,"members":[["Liesa Bunge",16],["Carina Walpert",16],["Leah Schultz",16],["Hannah Wachter",15],["Stefan Schüür",2]],"km":60.12,"avg":221136,"color":"#B083F5"},{"name":"Staffel 6","n":67,"total":14386080,"members":[["Freddy Claasen",18],["Stefan Schüür",16],["Sello Leeuw",14],["Mara-Lena Fuchs",7],["Henning",4],["Benedikt Abel",2],["Hannah Wachter",1],["Liesa Bunge",1],["Leah Schultz",1],["Fly Krüger",1],["Swantje Brandt",1],["Amelie Mittnacht",1]],"km":61.98,"avg":214718,"color":"#7FD8D0"},{"name":"Schlussstunde","n":15,"total":3266960,"members":[["Anabel Rufer",1],["Sello Leeuw",1],["Stefan Schüür",1],["Freddy Claasen",1],["Weike Ve Rigoll",1],["Leo Kunze",1],["Amelie Noll",1],["Charlotte Schulz",1],["Florian Lauffs",1],["Liesa Bunge",1],["De Dieu",1],["Joe Poppe",1],["Keno Schwedler",1],["Hannah Wachter",1],["Lennard Poppe",1]],"km":13.88,"avg":217797,"color":"#8AA0C8"}],"hours":[20,17,15,16,17,17,19,17,15,15,17,16,19,17,13,16,15,16,18,17,14,14,16,18,15],"history":[[120,37,0,0],[240,6,1,1],[360,3,2,2],[480,3,2,2],[600,2,3,3],[720,3,4,4],[840,3,4,4],[960,3,5,5],[1080,1,6,6],[1200,1,6,6],[1320,2,7,7],[1440,2,8,8],[1560,2,8,8],[1680,2,9,9],[1800,2,9,9],[1920,1,10,10],[2040,1,11,11],[2160,1,11,11],[2280,1,12,12],[2400,1,13,13],[2520,1,13,13],[2640,1,14,14],[2760,1,14,14],[2880,1,15,15],[3000,1,16,16],[3120,1,16,16],[3240,1,17,17],[3360,1,18,18],[3480,1,18,18],[3600,1,19,19],[3720,1,19,19],[3840,1,20,20],[3960,1,20,20],[4080,1,21,21],[4200,1,22,22],[4320,1,22,22],[4440,1,23,23],[4560,1,24,24],[4680,1,24,24],[4800,1,25,25],[4920,1,25,25],[5040,1,26,26],[5160,1,26,26],[5280,1,27,27],[5400,1,28,28],[5520,1,28,28],[5640,1,29,29],[5760,1,29,29],[5880,1,30,30],[6000,1,30,30],[6120,1,31,31],[6240,1,32,32],[6360,1,32,32],[6480,1,33,33],[6600,1,33,33],[6720,1,34,34],[6840,2,34,35],[6960,2,35,35],[7080,2,36,36],[7200,2,36,37],[7320,2,37,37],[7440,2,37,38],[7560,2,38,39],[7680,2,38,39],[7800,2,39,40],[7920,2,39,40],[8040,2,40,41],[8160,2,40,42],[8280,2,41,42],[8400,2,41,43],[8520,2,42,43],[8640,2,42,44],[8760,2,42,44],[8880,2,43,45],[9000,2,43,46],[9120,2,44,46],[9240,2,44,47],[9360,2,45,47],[9480,2,45,48],[9600,2,46,48],[9720,2,46,49],[9840,2,47,50],[9960,2,47,50],[10080,2,48,51],[10200,2,48,51],[10320,2,49,52],[10440,2,49,52],[10560,3,50,53],[10680,3,50,54],[10800,3,51,54],[10920,3,51,55],[11040,3,52,55],[11160,3,52,56],[11280,3,53,56],[11400,3,53,57],[11520,3,54,57],[11640,3,54,58],[11760,3,55,58],[11880,3,56,59],[12000,3,56,59],[12120,3,57,60],[12240,3,57,60],[12360,3,58,61],[12480,3,58,61],[12600,3,59,62],[12720,3,59,62],[12840,3,60,63],[12960,3,60,63],[13080,3,61,64],[13200,3,62,64],[13320,3,62,65],[13440,3,63,66],[13560,3,63,66],[13680,3,64,67],[13800,3,64,68],[13920,3,65,68],[14040,3,65,69],[14160,3,66,70],[14280,3,66,70],[14400,3,67,71],[14520,3,67,71],[14640,3,68,72],[14760,3,69,73],[14880,3,69,73],[15000,3,70,74],[15120,3,70,75],[15240,3,71,75],[15360,3,71,76],[15480,3,72,76],[15600,3,73,77],[15720,3,73,78],[15840,3,74,78],[15960,3,74,79],[16080,3,75,79],[16200,3,75,80],[16320,3,76,81],[16440,3,77,81],[16560,3,77,82],[16680,3,78,83],[16800,3,78,83],[16920,3,79,84],[17040,3,79,84],[17160,3,80,85],[17280,3,80,86],[17400,3,81,86],[17520,3,81,87],[17640,3,82,87],[17760,3,83,88],[17880,3,83,89],[18000,3,84,89],[18120,3,84,90],[18240,3,85,90],[18360,3,86,91],[18480,3,86,92],[18600,3,87,92],[18720,3,87,92],[18840,3,88,93],[18960,3,89,94],[19080,3,89,94],[19200,3,90,95],[19320,3,90,95],[19440,3,91,96],[19560,3,91,96],[19680,3,92,97],[19800,3,93,98],[19920,3,93,98],[20040,3,94,99],[20160,3,94,99],[20280,3,95,100],[20400,3,95,100],[20520,3,96,101],[20640,3,97,101],[20760,3,97,102],[20880,3,97,102],[21000,3,98,103],[21120,3,99,104],[21240,3,99,104],[21360,3,100,105],[21480,3,100,105],[21600,3,101,106],[21720,3,102,106],[21840,3,102,107],[21960,3,103,107],[22080,3,104,108],[22200,3,104,108],[22320,3,105,109],[22440,3,106,110],[22560,3,106,110],[22680,3,107,111],[22800,3,108,111],[22920,3,108,112],[23040,3,109,112],[23160,3,109,113],[23280,3,110,114],[23400,3,111,114],[23520,3,111,115],[23640,3,112,115],[23760,3,112,116],[23880,3,113,116],[24000,3,114,117],[24120,3,114,117],[24240,3,115,118],[24360,3,116,119],[24480,3,116,119],[24600,3,117,120],[24720,3,117,120],[24840,3,118,121],[24960,3,119,121],[25080,3,119,122],[25200,3,120,123],[25320,3,121,123],[25440,3,121,124],[25560,3,122,124],[25680,3,122,125],[25800,3,123,125],[25920,3,124,126],[26040,3,124,127],[26160,3,125,127],[26280,3,125,128],[26400,3,126,128],[26520,3,126,129],[26640,3,127,130],[26760,3,128,130],[26880,3,128,131],[27000,3,129,132],[27120,3,129,132],[27240,3,130,133],[27360,3,130,133],[27480,3,131,134],[27600,3,132,134],[27720,3,132,135],[27840,3,133,136],[27960,3,133,136],[28080,3,134,137],[28200,3,134,137],[28320,3,135,138],[28440,3,135,139],[28560,3,136,139],[28680,3,137,140],[28800,3,137,140],[28920,3,138,141],[29040,3,138,142],[29160,3,139,142],[29280,3,139,143],[29400,3,140,144],[29520,3,140,144],[29640,3,141,145],[29760,3,141,145],[29880,3,142,146],[30745,3,145,151],[30935,3,146,152],[31123,3,146,153],[31334,3,147,154],[31506,3,148,155],[31663,3,149,156],[32145,3,150,158],[32350,3,151,159],[32584,3,152,161],[32819,3,153,162],[33078,3,154,163],[33295,3,156,164],[33462,3,156,165],[33689,3,157,166],[33913,3,158,167],[34182,3,159,169],[34399,3,160,170],[34619,3,161,171],[34874,3,162,172],[35090,3,163,174],[35299,3,164,175],[35514,3,165,176],[36517,3,170,181],[36721,3,171,182],[37350,3,173,184],[37490,3,174,185],[37820,3,175,186],[38046,3,176,187],[38266,3,178,189],[38478,3,179,189],[38923,3,181,192],[39133,3,181,192],[39437,3,183,194],[39800,3,184,195],[40018,3,186,196],[40262,3,186,197],[41881,3,194,207],[42017,3,195,207],[42303,3,196,208],[42516,3,197,210],[42741,3,198,211],[42947,3,199,212],[43169,3,200,213],[43383,3,201,214],[43649,3,203,216],[43865,3,203,216],[44112,3,205,217],[44332,3,206,218],[44549,3,207,219],[44770,3,208,220],[44994,3,210,221],[45267,3,211,222],[45502,3,212,223],[45720,3,213,224],[45980,3,214,225],[46209,3,216,226],[46422,3,217,227],[46631,3,218,228],[46853,3,219,229],[47070,3,220,230],[47298,3,221,231],[47501,3,222,232],[47720,3,223,233],[47947,3,224,234],[48197,3,225,235],[48414,3,226,237],[48624,3,227,237],[48881,3,228,239],[49106,3,229,240],[49327,3,230,241],[70947,3,325,343],[71189,3,327,345],[71404,3,328,346],[72016,3,330,349],[72246,3,331,350],[72511,3,333,351],[72722,3,333,352],[73060,3,335,354],[73277,3,335,354],[73488,3,337,355],[73704,3,337,356],[73907,3,338,357],[74126,3,339,358],[74344,3,339,358],[74512,3,340,359],[74727,3,340,359],[74929,3,340,359],[82396,3,373,394],[82631,3,374,395],[82886,3,375,396],[83114,3,375,396],[83411,3,378,399],[83672,3,378,399],[83894,3,380,401],[84115,3,381,402],[84331,3,382,403],[90000,3,409,433]],"sflColor":{"Staffel 1":"#40C46E","Staffel 2":"#4B8FE0","Staffel 3":"#E8B22E","Staffel 4":"#E5544A","Staffel 5":"#B083F5","Staffel 6":"#7FD8D0","Schlussstunde":"#8AA0C8"},"allLaps":[[1,"de-dieu",168690,1],[2,"lennard-poppe",164010,1],[3,"joe-poppe",194800,1],[4,"benedikt-abel",168020,1],[5,"de-dieu",190800,1],[6,"lennard-poppe",175770,1],[7,"joe-poppe",200790,1],[8,"benedikt-abel",175490,1],[9,"de-dieu",190790,1],[10,"lennard-poppe",180590,1],[11,"joe-poppe",204200,1],[12,"benedikt-abel",183010,1],[13,"de-dieu",199310,1],[14,"lennard-poppe",178770,1],[15,"joe-poppe",205660,1],[16,"benedikt-abel",183320,1],[17,"de-dieu",195430,1],[18,"lennard-poppe",177140,1],[19,"joe-poppe",208290,1],[20,"fly-kruger",179590,1],[21,"swantje-brandt",235970,2],[22,"florian-lauffs",184660,2],[23,"amelie-mittnacht",207440,2],[24,"fly-kruger",176620,2],[25,"swantje-brandt",239640,2],[26,"florian-lauffs",190550,2],[27,"amelie-mittnacht",215580,2],[28,"fly-kruger",183650,2],[29,"swantje-brandt",239190,2],[30,"florian-lauffs",194530,2],[31,"amelie-mittnacht",215470,2],[32,"fly-kruger",185380,2],[33,"swantje-brandt",240130,2],[34,"florian-lauffs",192510,2],[35,"amelie-mittnacht",222630,2],[36,"fly-kruger",186690,2],[37,"swantje-brandt",241880,2],[38,"lynn-leonhauser",238190,3],[39,"charlotte-schulz",266450,3],[40,"weike-ve-rigoll",247180,3],[41,"anabel-rufer",233740,3],[42,"lynn-leonhauser",250830,3],[43,"charlotte-schulz",252810,3],[44,"weike-ve-rigoll",258270,3],[45,"anabel-rufer",243500,3],[46,"lynn-leonhauser",258880,3],[47,"charlotte-schulz",253950,3],[48,"weike-ve-rigoll",259330,3],[49,"anabel-rufer",250180,3],[50,"lynn-leonhauser",259180,3],[51,"charlotte-schulz",247790,3],[52,"keno-schwedler",195310,3],[53,"amelie-noll",227760,4],[54,"leo-kunze",201870,4],[55,"ingo-dansberg",232510,4],[56,"keno-schwedler",202480,4],[57,"amelie-noll",232580,4],[58,"leo-kunze",207740,4],[59,"ingo-dansberg",239500,4],[60,"keno-schwedler",203730,4],[61,"amelie-noll",238950,4],[62,"leo-kunze",214890,4],[63,"ingo-dansberg",243380,4],[64,"keno-schwedler",211480,4],[65,"amelie-noll",242870,4],[66,"leo-kunze",209030,4],[67,"ingo-dansberg",244420,4],[68,"leah-schultz",196100,4],[69,"hannah-wachter",195510,5],[70,"liesa-bunge",219680,5],[71,"carina-walpert",212700,5],[72,"leah-schultz",203040,5],[73,"hannah-wachter",209030,5],[74,"liesa-bunge",217350,5],[75,"carina-walpert",218040,5],[76,"leah-schultz",208530,5],[77,"hannah-wachter",211220,5],[78,"liesa-bunge",221860,5],[79,"carina-walpert",224840,5],[80,"leah-schultz",206830,5],[81,"hannah-wachter",213610,5],[82,"liesa-bunge",225320,5],[83,"carina-walpert",227910,5],[84,"leah-schultz",208560,5],[85,"stefan-schuur",178690,5],[86,"freddy-claasen",185980,6],[87,"sello-leeuw",213300,6],[88,"henning",198300,6],[89,"stefan-schuur",191010,6],[90,"freddy-claasen",191050,6],[91,"sello-leeuw",258730,6],[92,"henning",209570,6],[93,"stefan-schuur",202330,6],[94,"freddy-claasen",206220,6],[95,"henning",222240,6],[96,"stefan-schuur",212500,6],[97,"freddy-claasen",198430,6],[98,"sello-leeuw",258110,6],[99,"henning",215760,6],[100,"stefan-schuur",199600,6],[101,"freddy-claasen",202260,6],[102,"benedikt-abel",179190,6],[103,"de-dieu",181970,1],[104,"lennard-poppe",179070,1],[105,"joe-poppe",206210,1],[106,"benedikt-abel",177160,1],[107,"de-dieu",182850,1],[108,"lennard-poppe",176730,1],[109,"joe-poppe",212700,1],[110,"benedikt-abel",183150,1],[111,"de-dieu",200790,1],[112,"lennard-poppe",179170,1],[113,"joe-poppe",208680,1],[114,"benedikt-abel",182200,1],[115,"de-dieu",204260,1],[116,"lennard-poppe",175200,1],[117,"joe-poppe",204480,1],[118,"benedikt-abel",180410,1],[119,"de-dieu",196350,1],[120,"lennard-poppe",180210,1],[121,"joe-poppe",212200,1],[122,"florian-lauffs",172030,2],[123,"amelie-mittnacht",204670,2],[124,"fly-kruger",183040,2],[125,"swantje-brandt",238840,2],[126,"florian-lauffs",206930,2],[127,"amelie-mittnacht",220880,2],[128,"fly-kruger",183040,2],[129,"swantje-brandt",237960,2],[130,"florian-lauffs",199080,2],[131,"amelie-mittnacht",231430,2],[132,"fly-kruger",186220,2],[133,"swantje-brandt",241880,2],[134,"florian-lauffs",197110,2],[135,"fly-kruger",185100,2],[136,"swantje-brandt",239160,2],[137,"florian-lauffs",201170,2],[138,"fly-kruger",187550,2],[139,"lynn-leonhauser",256460,3],[140,"weike-ve-rigoll",247130,3],[141,"charlotte-schulz",240030,3],[142,"anabel-rufer",243090,3],[143,"lynn-leonhauser",256610,3],[144,"weike-ve-rigoll",255180,3],[145,"charlotte-schulz",252470,3],[146,"anabel-rufer",255770,3],[147,"lynn-leonhauser",261550,3],[148,"weike-ve-rigoll",254030,3],[149,"charlotte-schulz",252220,3],[150,"anabel-rufer",256310,3],[151,"lynn-leonhauser",252300,3],[152,"weike-ve-rigoll",261470,3],[153,"keno-schwedler",197600,3],[154,"amelie-noll",236070,4],[155,"leo-kunze",209250,4],[156,"ingo-dansberg",244210,4],[157,"keno-schwedler",205390,4],[158,"amelie-noll",236910,4],[159,"leo-kunze",198500,4],[160,"ingo-dansberg",246730,4],[161,"keno-schwedler",209670,4],[162,"amelie-noll",246180,4],[163,"leo-kunze",233550,4],[164,"ingo-dansberg",250400,4],[165,"keno-schwedler",204290,4],[166,"amelie-noll",242240,4],[167,"leo-kunze",231500,4],[168,"ingo-dansberg",247010,4],[169,"hannah-wachter",207390,5],[170,"liesa-bunge",218650,5],[171,"leah-schultz",198900,5],[172,"carina-walpert",247940,5],[173,"hannah-wachter",213280,5],[174,"liesa-bunge",218380,5],[175,"leah-schultz",201940,5],[176,"carina-walpert",241710,5],[177,"hannah-wachter",216090,5],[178,"liesa-bunge",224760,5],[179,"leah-schultz",205430,5],[180,"carina-walpert",238910,5],[181,"hannah-wachter",219510,5],[182,"liesa-bunge",225840,5],[183,"leah-schultz",207400,5],[184,"carina-walpert",238790,5],[185,"hannah-wachter",217750,5],[186,"stefan-schuur",183810,6],[187,"freddy-claasen",199790,6],[188,"sello-leeuw",222380,6],[189,"mara-lena-fuchs",238910,6],[190,"stefan-schuur",200790,6],[191,"freddy-claasen",199420,6],[192,"sello-leeuw",239750,6],[193,"mara-lena-fuchs",228100,6],[194,"stefan-schuur",204090,6],[195,"freddy-claasen",195420,6],[196,"sello-leeuw",245300,6],[197,"mara-lena-fuchs",235770,6],[198,"stefan-schuur",204850,6],[199,"freddy-claasen",199500,6],[200,"sello-leeuw",257940,6],[201,"mara-lena-fuchs",232540,6],[202,"benedikt-abel",181890,1],[203,"de-dieu",186950,1],[204,"lennard-poppe",179620,1],[205,"joe-poppe",211610,1],[206,"benedikt-abel",176630,1],[207,"de-dieu",191180,1],[208,"lennard-poppe",177270,1],[209,"joe-poppe",211620,1],[210,"benedikt-abel",184270,1],[211,"de-dieu",194910,1],[212,"lennard-poppe",179780,1],[213,"joe-poppe",218850,1],[214,"benedikt-abel",186190,1],[215,"de-dieu",193310,1],[216,"lennard-poppe",181620,1],[217,"joe-poppe",213930,1],[218,"benedikt-abel",184120,1],[219,"de-dieu",195910,1],[220,"lennard-poppe",184620,1],[221,"swantje-brandt",247760,2],[222,"florian-lauffs",192770,2],[223,"amelie-mittnacht",241710,2],[224,"fly-kruger",196050,2],[225,"swantje-brandt",241200,2],[226,"florian-lauffs",192430,2],[227,"amelie-mittnacht",228650,2],[228,"fly-kruger",187180,2],[229,"swantje-brandt",249070,2],[230,"florian-lauffs",194290,2],[231,"amelie-mittnacht",227480,2],[232,"fly-kruger",192210,2],[233,"swantje-brandt",243680,2],[234,"florian-lauffs",189210,2],[235,"amelie-mittnacht",224560,2],[236,"fly-kruger",191740,2],[237,"lynn-leonhauser",261500,2],[238,"charlotte-schulz",254460,3],[239,"weike-ve-rigoll",265850,3],[240,"anabel-rufer",260500,3],[241,"lynn-leonhauser",260090,3],[242,"charlotte-schulz",262250,3],[243,"weike-ve-rigoll",266890,3],[244,"anabel-rufer",264050,3],[245,"lynn-leonhauser",267170,3],[246,"charlotte-schulz",267620,3],[247,"weike-ve-rigoll",273320,3],[248,"anabel-rufer",260800,3],[249,"lynn-leonhauser",262690,3],[250,"charlotte-schulz",261370,3],[251,"keno-schwedler",219560,4],[252,"amelie-noll",255280,4],[253,"leo-kunze",227690,4],[254,"ingo-dansberg",256270,4],[255,"keno-schwedler",211560,4],[256,"amelie-noll",252290,4],[257,"leo-kunze",228890,4],[258,"ingo-dansberg",261660,4],[259,"keno-schwedler",211180,4],[260,"amelie-noll",253750,4],[261,"leo-kunze",253100,4],[262,"ingo-dansberg",254210,4],[263,"keno-schwedler",213440,4],[264,"amelie-noll",251880,4],[265,"leo-kunze",232510,4],[266,"ingo-dansberg",254130,4],[267,"liesa-bunge",232160,5],[268,"carina-walpert",246970,5],[269,"leah-schultz",217030,5],[270,"hannah-wachter",220060,5],[271,"liesa-bunge",231170,5],[272,"carina-walpert",242180,5],[273,"leah-schultz",209800,5],[274,"hannah-wachter",218530,5],[275,"liesa-bunge",236590,5],[276,"carina-walpert",241920,5],[277,"leah-schultz",211030,5],[278,"hannah-wachter",223430,5],[279,"liesa-bunge",235760,5],[280,"carina-walpert",240950,5],[281,"leah-schultz",211680,5],[282,"hannah-wachter",224360,6],[283,"liesa-bunge",235630,6],[284,"stefan-schuur",239260,6],[285,"freddy-claasen",213050,6],[286,"sello-leeuw",237910,6],[287,"stefan-schuur",217190,6],[288,"freddy-claasen",207480,6],[289,"sello-leeuw",242010,6],[290,"stefan-schuur",220490,6],[291,"freddy-claasen",207450,6],[292,"sello-leeuw",247750,6],[293,"stefan-schuur",209200,6],[294,"freddy-claasen",206190,6],[295,"sello-leeuw",253300,6],[296,"stefan-schuur",202800,6],[297,"freddy-claasen",197720,6],[298,"joe-poppe",218990,1],[299,"benedikt-abel",186130,1],[300,"de-dieu",195420,1],[301,"lennard-poppe",193570,1],[302,"joe-poppe",228650,1],[303,"benedikt-abel",190030,1],[304,"de-dieu",193050,1],[305,"lennard-poppe",187910,1],[306,"joe-poppe",226890,1],[307,"benedikt-abel",191220,1],[308,"de-dieu",203030,1],[309,"lennard-poppe",189330,1],[310,"joe-poppe",234130,1],[311,"benedikt-abel",192880,1],[312,"de-dieu",208070,1],[313,"lennard-poppe",186620,1],[314,"joe-poppe",229890,1],[315,"benedikt-abel",190780,1],[316,"de-dieu",210560,2],[317,"swantje-brandt",258890,2],[318,"florian-lauffs",205930,2],[319,"amelie-mittnacht",242060,2],[320,"fly-kruger",193890,2],[321,"swantje-brandt",251490,2],[322,"florian-lauffs",195230,2],[323,"amelie-mittnacht",233000,2],[324,"fly-kruger",190860,2],[325,"swantje-brandt",254290,2],[326,"florian-lauffs",194980,2],[327,"amelie-mittnacht",230350,2],[328,"fly-kruger",193850,2],[329,"swantje-brandt",251690,2],[330,"florian-lauffs",192920,2],[331,"amelie-mittnacht",223960,2],[332,"fly-kruger",192430,2],[333,"hannah-wachter",225330,3],[334,"weike-ve-rigoll",274310,3],[335,"charlotte-schulz",266810,3],[336,"anabel-rufer",259300,3],[337,"hannah-wachter",228540,3],[338,"weike-ve-rigoll",268980,3],[339,"charlotte-schulz",273080,3],[340,"anabel-rufer",260400,3],[341,"hannah-wachter",229400,3],[342,"weike-ve-rigoll",273390,3],[343,"charlotte-schulz",278860,3],[344,"anabel-rufer",267960,3],[345,"amelie-noll",259380,3],[346,"keno-schwedler",205500,3],[347,"leo-kunze",251920,4],[348,"ingo-dansberg",268760,4],[349,"amelie-noll",261770,4],[350,"keno-schwedler",211940,4],[351,"leo-kunze",249920,4],[352,"ingo-dansberg",257160,4],[353,"amelie-noll",263710,4],[354,"keno-schwedler",215750,4],[355,"leo-kunze",274830,4],[356,"ingo-dansberg",251060,4],[357,"amelie-noll",260760,4],[358,"keno-schwedler",212370,4],[359,"leo-kunze",225520,4],[360,"ingo-dansberg",247600,4],[361,"carina-walpert",246500,5],[362,"leah-schultz",210000,5],[363,"hannah-wachter",219540,5],[364,"liesa-bunge",241810,5],[365,"carina-walpert",240550,5],[366,"leah-schultz",208920,5],[367,"hannah-wachter",222560,5],[368,"liesa-bunge",233730,5],[369,"carina-walpert",239230,5],[370,"leah-schultz",207030,5],[371,"hannah-wachter",222050,5],[372,"liesa-bunge",235070,5],[373,"carina-walpert",238600,5],[374,"leah-schultz",205500,5],[375,"liesa-bunge",236180,5],[376,"stefan-schuur",201950,5],[377,"freddy-claasen",197340,6],[378,"sello-leeuw",223560,6],[379,"mara-lena-fuchs",228580,6],[380,"stefan-schuur",193320,6],[381,"freddy-claasen",194580,6],[382,"sello-leeuw",230860,6],[383,"mara-lena-fuchs",229190,6],[384,"stefan-schuur",198300,6],[385,"freddy-claasen",202120,6],[386,"sello-leeuw",246450,6],[387,"mara-lena-fuchs",232890,6],[388,"stefan-schuur",200980,6],[389,"freddy-claasen",200420,6],[390,"benedikt-abel",175820,6],[391,"leah-schultz",198010,6],[392,"fly-kruger",183190,6],[393,"swantje-brandt",236210,6],[394,"amelie-mittnacht",219530,6],[395,"anabel-rufer",247540,0],[396,"sello-leeuw",250890,0],[397,"stefan-schuur",192730,0],[398,"freddy-claasen",198820,0],[399,"weike-ve-rigoll",253960,0],[400,"leo-kunze",209260,0],[401,"amelie-noll",250850,0],[402,"charlotte-schulz",269560,0],[403,"florian-lauffs",185460,0],[404,"liesa-bunge",227250,0],[405,"de-dieu",181200,0],[406,"joe-poppe",206190,0],[407,"keno-schwedler",200370,0],[408,"hannah-wachter",219650,0],[409,"lennard-poppe",173230,0]]}</script>
+<script>
+(function(){
+"use strict";
+var D = JSON.parse(document.getElementById("data").textContent);
+var $ = function(id){ return document.getElementById(id); };
+
+/* ── Formate ────────────────────────────────────────────────────────────── */
+function mmss(ms){                       // 3:24 / 3:24,5 bei Bedarf
+  var s = Math.round(ms/1000);
+  return Math.floor(s/60) + ":" + String(s%60).padStart(2,"0");
+}
+function hhmm(ms){
+  var s = Math.round(ms/1000), h = Math.floor(s/3600);
+  var rest = String(Math.floor(s/60)%60).padStart(2,"0") + ":" + String(s%60).padStart(2,"0");
+  return h ? h + ":" + rest : rest + " min";
+}
+function pace(ms){                        // min/km bei 925 m Runde
+  return mmss(ms / (D.lapM/1000));
+}
+/* Rennzeit -> Uhrzeit vor Ort. Bewusst aus der Rennzeit gerechnet und nicht über
+   Date/Zeitzone: die Seite soll in Göttingen und in Kapstadt dieselbe Uhrzeit zeigen. */
+function clock(offset){
+  var m = 10*60 + Math.floor(offset/60000);        // Start Sa 10:00
+  var wd = m >= 24*60 ? "So" : "Sa";
+  m %= 24*60;
+  return wd + " " + String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0");
+}
+function de(n, dec){
+  return n.toLocaleString("de-DE", {minimumFractionDigits:dec||0, maximumFractionDigits:dec||0});
+}
+
+/* ── Kopfzahlen ─────────────────────────────────────────────────────────── */
+var R = D.result;
+$("s-laps").textContent = R.laps;
+$("s-km").textContent   = de(R.km, 1);
+$("s-run").textContent  = R.runners;
+$("s-avg").textContent  = mmss(R.avgLap);
+$("gaps").innerHTML =
+  '<span class="chip">Vor uns: ' + esc(R.ahead) + ' <b>+' + R.gapAhead + ' Rd.</b></span>' +
+  '<span class="chip">Hinter uns: ' + esc(R.behind) + ' <b>−' + R.gapBehind + ' Rd.</b></span>' +
+  '<span class="chip">Schnellste Runde <b>' + mmss(R.bestLap) + '</b> · ' + esc(R.bestLapBy) + '</span>' +
+  '<span class="chip">Ø Pace <b>' + pace(R.avgLap) + ' min/km</b></span>';
+
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"]/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];
+  });
+}
+
+/* Auf dem Handy wird eine 700er Zeichenfläche auf ~330 px gequetscht – Schrift und
+   Punkte werden winzig. Schmale Geräte bekommen darum ein engeres, höheres Raster. */
+function dims(id, wide, narrow){
+  var el = $(id), px = el.clientWidth || 600;
+  var d = px < 520 ? narrow : wide;
+  el.setAttribute("viewBox", "0 0 " + d[0] + " " + d[1]);
+  return {W:d[0], H:d[1]};
+}
+
+/* ── Läufer:innen-Auswahl ───────────────────────────────────────────────── */
+var maxLaps = Math.max.apply(null, D.runners.map(function(r){ return r.n; }));
+var picker = $("picker");
+
+function renderPicker(filter){
+  var f = (filter||"").trim().toLowerCase();
+  var list = D.runners.filter(function(r){ return !f || r.name.toLowerCase().indexOf(f) >= 0; });
+  if(!list.length){
+    picker.innerHTML = '<div class="blocknote" style="grid-column:1/-1">Kein Name gefunden.</div>';
+    return;
+  }
+  picker.innerHTML = list.map(function(r){
+    return '<button class="rcard" type="button" data-k="' + r.key + '" aria-pressed="' +
+      (r.key === current ? "true" : "false") + '">' +
+      '<span class="nm">' + esc(r.name) + '</span>' +
+      '<span class="mt">' + r.n + ' Runden · ' + de(r.km,1) + ' km</span>' +
+      '<span class="bar"><i style="width:' + (r.n/maxLaps*100).toFixed(1) + '%"></i></span>' +
+      '</button>';
+  }).join("");
+}
+
+var current = null;
+picker.addEventListener("click", function(e){
+  var b = e.target.closest("[data-k]");
+  if(b) select(b.getAttribute("data-k"), true);
+});
+$("q").addEventListener("input", function(){ renderPicker(this.value); });
+
+/* ── Persönliche Auswertung ─────────────────────────────────────────────── */
+function select(k, scroll){
+  var r = D.runners.filter(function(x){ return x.key === k; })[0];
+  if(!r) return;
+  current = k;
+  history.replaceState(null, "", "#" + k);
+  renderPicker($("q").value);
+  $("clear").hidden = false;
+  $("detail").hidden = false;
+
+  $("d-name").textContent = r.name;
+  $("d-sub").textContent = r.staffel + " · im Team Platz " + r.rankLaps + " nach Runden · "
+    + "schnellste Runde Platz " + r.rankBest + " von " + D.runners.length;
+
+  var share = (r.n / R.laps * 100);
+  $("d-stats").innerHTML = [
+    st(r.n, "Runden", de(r.km,2) + " km · " + de(share,1) + " % des Teams"),
+    st(hhmm(r.total), "Laufzeit gesamt", "reine Zeit auf der Strecke"),
+    st(mmss(r.best), "schnellste Runde", pace(r.best) + " min/km"),
+    st(mmss(r.avg), "Ø Rundenzeit", pace(r.avg) + " min/km"),
+    st(mmss(r.worst), "langsamste Runde", "Spanne " + mmss(r.worst - r.best)),
+    st(r.night, "Nachtrunden", "zwischen 22 und 7 Uhr")
+  ].join("");
+
+  // Rundentabelle
+  var span = Math.max(1, r.worst - r.best);
+  $("d-laps").innerHTML = r.lapList.map(function(l, i){
+    var dur = l[1];
+    var w = 22 + (dur - r.best) / span * 78;
+    return '<tr' + (dur === r.best ? ' class="best"' : '') + '>' +
+      '<td class="r mono" style="color:var(--ink3)">' + (i+1) + '</td>' +
+      '<td class="mono">' + clock(l[2]) + '</td>' +
+      '<td class="r mono" style="font-weight:600">' + mmss(dur) + '</td>' +
+      '<td class="r mono" style="color:var(--ink2)">' + pace(dur) + '</td>' +
+      '<td><span class="lapbar"><i style="width:' + w.toFixed(1) + '%"></i></span></td>' +
+      '</tr>';
+  }).join("");
+  $("d-lapnote").textContent = r.n + " Runden von " + clock(r.first) + " bis " + clock(r.last)
+    + " – die schnellste ist grün.";
+
+  drawLapChart(r);
+  drawTimeline(r);
+  if(scroll) $("detail").scrollIntoView({block:"start"});
+}
+
+function st(big, label, hint){
+  return '<div class="dstat"><b>' + esc(big) + '</b><small>' + esc(label) + '</small>' +
+         (hint ? '<div class="hint">' + esc(hint) + '</div>' : '') + '</div>';
+}
+
+$("d-close").addEventListener("click", clearSel);
+$("clear").addEventListener("click", clearSel);
+function clearSel(){
+  current = null;
+  $("detail").hidden = true;
+  $("clear").hidden = true;
+  history.replaceState(null, "", location.pathname + location.search);
+  renderPicker($("q").value);
+  $("ich").scrollIntoView({block:"start"});
+}
+
+/* ── Diagramm: Rundenzeiten ─────────────────────────────────────────────── */
+function drawLapChart(r){
+  var W = 400, H = 170, L = 42, Rg = 8, T = 10, B = 22;
+  var d = r.lapList.map(function(l){ return l[1]; });
+  var lo = Math.min(r.best, R.avgLap), hi = Math.max(r.worst, R.avgLap);
+  var pad = (hi - lo) * .12 || 1000;
+  lo -= pad; hi += pad;
+  var x = function(i){ return L + (d.length < 2 ? (W-L-Rg)/2 : i/(d.length-1)*(W-L-Rg)); };
+  var y = function(v){ return T + (1 - (v-lo)/(hi-lo)) * (H-T-B); };
+
+  var s = "";
+  // y-Achse: drei Marken
+  [lo+(hi-lo)*.1, (lo+hi)/2, hi-(hi-lo)*.1].forEach(function(v){
+    s += '<line x1="'+L+'" x2="'+(W-Rg)+'" y1="'+y(v).toFixed(1)+'" y2="'+y(v).toFixed(1)+
+         '" stroke="var(--line)" stroke-width="1"/>' +
+         '<text x="'+(L-7)+'" y="'+(y(v)+4).toFixed(1)+'" text-anchor="end" font-size="10" ' +
+         'fill="var(--ink3)" font-family="IBM Plex Mono,monospace">'+mmss(v)+'</text>';
+  });
+  // Team-Schnitt
+  s += '<line x1="'+L+'" x2="'+(W-Rg)+'" y1="'+y(R.avgLap).toFixed(1)+'" y2="'+y(R.avgLap).toFixed(1)+
+       '" stroke="var(--ink3)" stroke-width="1" stroke-dasharray="4 3"/>';
+  // eigener Schnitt
+  s += '<line x1="'+L+'" x2="'+(W-Rg)+'" y1="'+y(r.avg).toFixed(1)+'" y2="'+y(r.avg).toFixed(1)+
+       '" stroke="var(--am)" stroke-width="1.5" stroke-dasharray="5 3"/>';
+  // Linie
+  var pts = d.map(function(v,i){ return x(i).toFixed(1)+","+y(v).toFixed(1); }).join(" ");
+  s += '<polyline points="'+pts+'" fill="none" stroke="var(--cy)" stroke-width="1.6" ' +
+       'stroke-linejoin="round" opacity=".75"/>';
+  d.forEach(function(v,i){
+    var best = v === r.best;
+    s += '<circle cx="'+x(i).toFixed(1)+'" cy="'+y(v).toFixed(1)+'" r="'+(best?3.6:2.4)+
+         '" fill="'+(best?"var(--gr)":"var(--cy)")+'"><title>Runde '+(i+1)+': '+mmss(v)+'</title></circle>';
+  });
+  s += '<text x="'+L+'" y="'+(H-5)+'" font-size="10" fill="var(--ink3)">1. Runde</text>' +
+       '<text x="'+(W-Rg)+'" y="'+(H-5)+'" font-size="10" fill="var(--ink3)" text-anchor="end">'+d.length+'. Runde</text>';
+  $("d-chart").innerHTML = s;
+}
+
+/* ── Diagramm: Einsatzzeiten über 25 h ──────────────────────────────────── */
+function drawTimeline(r){
+  var W = 400, H = 58, L = 2, Rg = 2, top = 14, h = 22;
+  var total = D.raceMs;
+  var s = '<rect x="'+L+'" y="'+top+'" width="'+(W-L-Rg)+'" height="'+h+
+          '" rx="5" fill="var(--sunk)" stroke="var(--line)"/>';
+  // Nacht 22–07 Uhr = Rennstunde 12 bis 21
+  var nx = L + 12/25*(W-L-Rg), nw = 9/25*(W-L-Rg);
+  s += '<rect x="'+nx.toFixed(1)+'" y="'+top+'" width="'+nw.toFixed(1)+'" height="'+h+
+       '" fill="rgba(144,121,242,.22)"/>';
+  r.lapList.forEach(function(l){
+    var px = L + l[2]/total*(W-L-Rg);
+    s += '<rect x="'+px.toFixed(1)+'" y="'+(top+2)+'" width="1.8" height="'+(h-4)+
+         '" rx="1" fill="var(--cy)"><title>Runde um '+clock(l[2])+'</title></rect>';
+  });
+  [[0,"Sa 10"],[6,"16"],[12,"22"],[18,"So 04"],[25,"11"]].forEach(function(m){
+    var px = L + m[0]/25*(W-L-Rg);
+    var anc = m[0] === 0 ? "start" : (m[0] === 25 ? "end" : "middle");
+    s += '<text x="'+px.toFixed(1)+'" y="'+(top+h+13)+'" font-size="9.5" fill="var(--ink3)" ' +
+         'text-anchor="'+anc+'">'+m[1]+'</text>';
+  });
+  $("d-time").innerHTML = s;
+}
+
+/* ── Teamdiagramm: Rennverlauf ──────────────────────────────────────────── */
+function drawHistory(){
+  var dm = dims("t-hist", [560,200], [420,230]);
+  var W = dm.W, H = dm.H, L = 36, Rg = 36, T = 14, B = 22;
+  var h = D.history.filter(function(p){ return p[0] > 600; });   // erste 10 min sind Rauschen
+  var maxT = D.raceMs/1000;
+  var maxGap = Math.max.apply(null, h.map(function(p){ return p[3]-p[2]; }));
+  maxGap = Math.max(maxGap, 5);
+  var x = function(t){ return L + t/maxT*(W-L-Rg); };
+  var yg = function(g){ return T + g/maxGap*(H-T-B); };
+  var yr = function(rk){ return T + (rk-1)/9*(H-T-B); };        // Skala Platz 1–10
+
+  var s = "";
+  // rechts die Platzierung, links der Rückstand – zwei Skalen, darum beide beschriftet
+  [1,3,5,10].forEach(function(rk){
+    s += '<line x1="'+L+'" x2="'+(W-Rg)+'" y1="'+yr(rk).toFixed(1)+'" y2="'+yr(rk).toFixed(1)+
+         '" stroke="var(--line)" stroke-width="1"/>' +
+         '<text x="'+(W-Rg+6)+'" y="'+(yr(rk)+4).toFixed(1)+'" font-size="10" fill="var(--cy)">Pl. '+rk+'</text>';
+  });
+  [0, Math.round(maxGap/2), maxGap].forEach(function(g){
+    s += '<text x="'+(L-5)+'" y="'+(yg(g)+4).toFixed(1)+'" font-size="10" fill="var(--vi)" ' +
+         'text-anchor="end" font-family="IBM Plex Mono,monospace">'+(g === 0 ? "0" : "−"+g)+'</text>';
+  });
+  var area = h.map(function(p){ return x(p[0]).toFixed(1)+","+yg(p[3]-p[2]).toFixed(1); }).join(" ");
+  s += '<polygon points="'+x(h[0][0]).toFixed(1)+','+T+' '+area+' '+x(h[h.length-1][0]).toFixed(1)+','+T+
+       '" fill="rgba(144,121,242,.20)" stroke="var(--vi)" stroke-width="1.2"/>';
+  var line = h.map(function(p){ return x(p[0]).toFixed(1)+","+yr(Math.min(10,p[1])).toFixed(1); }).join(" ");
+  s += '<polyline points="'+line+'" fill="none" stroke="var(--cy)" stroke-width="2" stroke-linejoin="round"/>';
+  var last = h[h.length-1];
+  s += '<circle cx="'+x(last[0]).toFixed(1)+'" cy="'+yr(last[1]).toFixed(1)+'" r="4" fill="var(--gold)"/>';
+  [[0,"Sa 10"],[9,"19"],[18,"So 04"],[25,"11"]].forEach(function(m){
+    var px = x(m[0]*3600);
+    s += '<text x="'+px.toFixed(1)+'" y="'+(H-5)+'" font-size="10" fill="var(--ink3)" text-anchor="'+
+         (m[0]===0?"start":"middle")+'">'+m[1]+'</text>';
+  });
+  $("t-hist").innerHTML = s;
+}
+
+/* ── Teamdiagramm: Runden pro Stunde ────────────────────────────────────── */
+function drawHours(){
+  var dm = dims("t-hours", [400,170], [400,200]);
+  var W = dm.W, H = dm.H, L = 24, Rg = 6, T = 10, B = 24;
+  var hrs = D.hours, mx = Math.max.apply(null, hrs);
+  var bw = (W-L-Rg)/hrs.length;
+  var s = '<rect x="'+(L+12*bw).toFixed(1)+'" y="'+T+'" width="'+(9*bw).toFixed(1)+
+          '" height="'+(H-T-B)+'" fill="rgba(144,121,242,.13)"/>';
+  hrs.forEach(function(v,i){
+    var bh = v/mx*(H-T-B), bx = L+i*bw+1.2;
+    s += '<rect x="'+bx.toFixed(1)+'" y="'+(H-B-bh).toFixed(1)+'" width="'+(bw-2.4).toFixed(1)+
+         '" height="'+bh.toFixed(1)+'" rx="2" fill="'+(i>=12&&i<21?"var(--vi)":"var(--cy)")+
+         '" opacity=".85"><title>'+clock(i*3600000).slice(3)+' Uhr: '+v+' Runden</title></rect>';
+  });
+  [0, Math.round(mx/2), mx].forEach(function(v){
+    var y = H-B-(v/mx*(H-T-B));
+    s += '<text x="'+(L-5)+'" y="'+(y+4).toFixed(1)+'" font-size="10" fill="var(--ink3)" ' +
+         'text-anchor="end" font-family="IBM Plex Mono,monospace">'+v+'</text>';
+  });
+  [[0,"Sa 10"],[6,"16"],[12,"22"],[18,"So 04"],[24,"10"]].forEach(function(m){
+    s += '<text x="'+(L+m[0]*bw+bw/2).toFixed(1)+'" y="'+(H-7)+'" font-size="9.5" fill="var(--ink3)" ' +
+         'text-anchor="middle">'+m[1]+'</text>';
+  });
+  $("t-hours").innerHTML = s;
+}
+
+/* ── Teamdiagramm: alle Rundenzeiten, eingefärbt nach Staffel ───────────── */
+var lapWindow = 0;                      // 0 = alle Runden, sonst die letzten n
+function drawTeamLaps(){
+  var dm = dims("t-laps", [700,250], [430,300]);
+  var W = dm.W, H = dm.H, L = 48, Rg = 10, T = 12, B = 26;
+  var all = D.allLaps;
+  var Lp = lapWindow ? all.slice(-lapWindow) : all;
+  var ts = Lp.map(function(l){ return l[2]/1000; });
+  var lo = Math.min.apply(null, ts), hi = Math.max.apply(null, ts);
+  var pad = (hi-lo)*.12 + 3; lo = Math.max(0, lo-pad); hi += pad;
+  var i0 = Lp[0][0], i1 = Lp[Lp.length-1][0];
+  var x = function(i){ return L + (i1>i0 ? (i-i0)/(i1-i0) : .5)*(W-L-Rg); };
+  var y = function(v){ return H-B - (v-lo)/(hi-lo)*(H-T-B); };
+  var s = "";
+
+  // Zusammenhängende Runden derselben Staffel = eine Schicht. Jede zweite
+  // wird hinterlegt, so sieht man die Stundenwechsel ohne zusätzliche Linien.
+  var blocks = [], cb = null, seen = {};
+  Lp.forEach(function(l){
+    seen[l[3]] = 1;
+    if(!cb || cb.sid !== l[3]){ cb = {sid:l[3], from:l[0], to:l[0]}; blocks.push(cb); }
+    else cb.to = l[0];
+  });
+  blocks.forEach(function(b,i){
+    if(i % 2) return;
+    var x1 = x(b.from), x2 = x(b.to);
+    s += '<rect x="'+(x1-2).toFixed(1)+'" y="'+T+'" width="'+Math.max(2,x2-x1+4).toFixed(1)+
+         '" height="'+(H-T-B)+'" fill="var(--panel2)" opacity=".7"/>';
+  });
+
+  // y-Achse in glatten Zeitschritten
+  var step = (hi-lo) > 300 ? 120 : (hi-lo) > 150 ? 60 : (hi-lo) > 80 ? 30 : 15;
+  for(var v = Math.ceil(lo/step)*step; v <= hi; v += step){
+    s += '<line x1="'+L+'" x2="'+(W-Rg)+'" y1="'+y(v).toFixed(1)+'" y2="'+y(v).toFixed(1)+
+         '" stroke="var(--line)" stroke-width="1"/>' +
+         '<text x="'+(L-6)+'" y="'+(y(v)+3.5).toFixed(1)+'" text-anchor="end" font-size="10.5" ' +
+         'fill="var(--ink3)" font-family="IBM Plex Mono,monospace">'+mmss(v*1000)+'</text>';
+  }
+  var span = i1 - i0;
+  var xs = span > 400 ? 100 : span > 200 ? 50 : span > 90 ? 25 : span > 40 ? 10 : 5;
+  for(var i = Math.ceil(i0/xs)*xs; i <= i1; i += xs){
+    s += '<text x="'+x(i).toFixed(1)+'" y="'+(H-8)+'" text-anchor="middle" font-size="10.5" ' +
+         'fill="var(--ink3)">'+i+'</text>';
+  }
+  s += '<text x="'+L+'" y="'+(H-8)+'" font-size="10.5" fill="var(--ink3)" opacity=".8">Runde</text>';
+
+  // Punkte
+  var rad = Lp.length > 300 ? 2 : Lp.length > 120 ? 2.6 : 3.6;
+  Lp.forEach(function(l){
+    var r = byKey[l[1]];
+    s += '<circle cx="'+x(l[0]).toFixed(1)+'" cy="'+y(l[2]/1000).toFixed(1)+'" r="'+rad+
+         '" fill="'+(D.sflColor[sidName(l[3])] || "var(--ink3)")+'" opacity=".88">' +
+         '<title>Runde '+l[0]+' · '+mmss(l[2])+' · '+(r?r.name:"?")+'</title></circle>';
+  });
+
+  // gleitendes Mittel über fünf Runden – zeigt, wie das Team über die Nacht kam
+  var d = "", k = 5;
+  for(var j = 0; j < Lp.length; j++){
+    var a = Math.max(0, j-k+1), sum = 0, c = 0;
+    for(var m = a; m <= j; m++){ sum += Lp[m][2]/1000; c++; }
+    d += (j ? "L" : "M") + x(Lp[j][0]).toFixed(1) + " " + y(sum/c).toFixed(1);
+  }
+  s += '<path d="'+d+'" fill="none" stroke="var(--ink)" stroke-width="2" opacity=".55" ' +
+       'stroke-linejoin="round" stroke-linecap="round"/>';
+  $("t-laps").innerHTML = s;
+
+  $("lapleg").innerHTML = D.staffeln.filter(function(sf){ return seen[sfSid(sf.name)]; })
+    .map(function(sf){ return '<span><i class="dot" style="background:'+sf.color+'"></i>'+esc(sf.name)+'</span>'; })
+    .join("") + '<span><i style="background:var(--ink); opacity:.55"></i>Mittel über 5 Runden</span>';
+}
+function sidName(sid){ return sid === 0 ? "Schlussstunde" : "Staffel " + sid; }
+function sfSid(name){ return name === "Schlussstunde" ? 0 : parseInt(name.split(" ")[1], 10); }
+var byKey = {};
+D.runners.forEach(function(r){ byKey[r.key] = r; });
+
+$("bAll").addEventListener("click", function(){
+  lapWindow = 0; this.setAttribute("aria-pressed","true");
+  $("bLast").setAttribute("aria-pressed","false"); drawTeamLaps();
+});
+$("bLast").addEventListener("click", function(){
+  lapWindow = 60; this.setAttribute("aria-pressed","true");
+  $("bAll").setAttribute("aria-pressed","false"); drawTeamLaps();
+});
+
+/* ── Staffeln ───────────────────────────────────────────────────────────── */
+$("t-sfl").innerHTML = D.staffeln.map(function(s){
+  var top = s.members.slice(0,6), rest = s.members.length - top.length;
+  var mem = top.map(function(m){ return esc(m[0]) + " (" + m[1] + ")"; }).join(" · ")
+          + (rest > 0 ? " · + " + rest + " weitere" : "");
+  return '<div class="sflrow">' +
+    '<div class="n">' + s.n + '<small>Runden</small></div>' +
+    '<div><div class="nm">' + esc(s.name) + '</div><div class="mem">' + mem + '</div></div>' +
+    '<div class="n" style="color:var(--am)">' + mmss(s.avg) + '<small>Ø Runde</small></div>' +
+    '</div>';
+}).join("");
+
+/* ── Gesamtwertung ──────────────────────────────────────────────────────── */
+var wOpen = false;
+function renderW(){
+  var lead = D.standings[0].laps;
+  var rows = wOpen ? D.standings : D.standings.filter(function(t){ return t.rank <= 8 || t.us; });
+  $("w-body").innerHTML = rows.map(function(t){
+    var cls = t.rank <= 3 ? " p" + t.rank : "";
+    return '<tr class="' + (t.us ? "us" : "") + '">' +
+      '<td class="r"><span class="pos' + cls + '">' + t.rank + '</span></td>' +
+      '<td>' + esc(t.name) + (t.us ? ' ★' : '') + '</td>' +
+      '<td class="r mono">' + t.laps + '</td>' +
+      '<td class="r mono" style="color:var(--ink2)">' + de(t.km,1) + '</td>' +
+      '<td class="r mono" style="color:var(--ink3)">' + (t.rank === 1 ? "–" : "−" + (lead - t.laps)) + '</td>' +
+      '</tr>';
+  }).join("");
+  $("w-more").textContent = wOpen ? "Weniger anzeigen" : "Alle 49 Teams anzeigen";
+}
+$("w-more").addEventListener("click", function(){ wOpen = !wOpen; renderW(); });
+
+/* ── Start ──────────────────────────────────────────────────────────────── */
+renderPicker("");
+renderW();
+drawHistory(); drawHours(); drawTeamLaps();
+var rt;
+addEventListener("resize", function(){
+  clearTimeout(rt);
+  rt = setTimeout(function(){
+    drawHistory(); drawHours(); drawTeamLaps();
+    if(current) select(current, false);
+  }, 180);
+});
+var hash = decodeURIComponent(location.hash.replace(/^#/, ""));
+if(hash) select(hash, false);
+
+/* Logo nachladen, falls vorhanden – ohne Logo sieht der Kopf trotzdem gut aus. */
+var lg = $("logo");
+lg.addEventListener("load", function(){ lg.hidden = false; });
+lg.src = "logo.png";
+})();
+</script>
+</body>
+</html>
